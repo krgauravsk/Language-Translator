@@ -42,3 +42,8 @@ The Language Translator is a dynamic web application designed to simplify multil
 - Microsoft Translator API for language translation
 
 - JavaScript for functionality
+
+
+
+
+Github codesandbox link: https://codesandbox.io/p/github/krgaurav212/Language-Translator
