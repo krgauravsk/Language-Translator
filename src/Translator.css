@@ -1,0 +1,189 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  /* min-height: 100vh; */
+  min-height: calc(100vh - 44px);
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.row1 {
+  width: calc(100% - 10px);
+  max-width: 650px;
+}
+
+.select-lang {
+  width: calc(50% - 20px);
+  line-height: 40px;
+  font-size: 14px;
+  /* border: 1px solid #dadce0; */
+  border-radius: 8px;
+  height: 40px;
+}
+.ant-select-selector {
+  color: #1a0dab !important;
+}
+
+.reversesvg {
+  width: 20px !important;
+  line-height: 40px;
+  opacity: 0.5;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+option {
+  color: #202124;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 10px);
+  max-width: 650px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.inputText {
+  width: calc(50% - 20px);
+  position: relative;
+}
+
+.outputText {
+  width: calc(50% - 20px);
+  height: 150px;
+  font-family: monospace;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 8px;
+  overflow: auto;
+  background: #edeff0;
+  text-align: left;
+}
+
+.row2 textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  box-sizing: border-box;
+  padding: 0px 35px 10px 10px;
+  margin-top: 15px;
+  border: none;
+  font-size: 20px;
+  overflow: auto;
+  color: #202124;
+  outline: none;
+}
+
+.close-icon {
+  cursor: pointer;
+  width: 20px;
+  position: absolute;
+  opacity: 0.5;
+  top: 20px;
+  right: 3px;
+}
+
+.button-container {
+  width: calc(100% - 10px);
+  max-width: 650px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.translate-button {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  outline: none;
+  background-color: #6d9eed;
+  color: #fff;
+  border: transparent;
+  border: 2px solid #6d9eed;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.translate-button i {
+  display: none;
+}
+.translate-button:hover {
+  background-color: #648acd;
+  border: 2px solid #648acd;
+}
+.text-input {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 8px;
+  padding: 15px 10px !important;
+}
+
+.mic {
+  position: absolute;
+  left: 10px;
+  width: 28px !important;
+  cursor: pointer !important;
+  opacity: 0.5;
+  bottom: 15px;
+  padding-top: 3px;
+  padding-right: 2px;
+  padding-bottom: 3px;
+}
+.mic:hover {
+  background-color: #7d8189;
+  border-radius: 50%;
+}
+.voiceBar {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.speaker {
+  position: absolute;
+  width: 28px;
+  cursor: pointer;
+  opacity: 0.5;
+  bottom: 15px;
+  padding: 3px 2px;
+  padding-left: 7px !important;
+}
+.speaker:hover {
+  background-color: #7d8189;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .row2 {
+    flex-direction: column;
+  }
+  .inputText {
+    width: 100%;
+  }
+  .outputText {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 172, 172);
+  border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: cornflowerblue;
+  padding: 10px 30px;
+  gap: 10px;
+  color: white;
+}
