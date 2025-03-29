@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-The Language Translator is a ReactJS-based web application that enables seamless text translation between multiple languages using the Microsoft Translator API. It provides users with an intuitive interface to input text, select languages, and receive instant translations. Additionally, the app features text-to-speech (TTS) functionality, allowing users to listen to the translated text. The application also includes a responsive UI, error handling support for an enhanced user experience.
+The Language Translator is a dynamic web application designed to simplify multilingual communication. By leveraging the Microsoft Translator API, it enables real-time text translation across various languages. The app features an easy-to-use interface, language selection options, and text-to-speech (TTS) capabilities for audio playback of translations. With its responsive design and built-in error handling, the application ensures a smooth and efficient translation experience for users.
 
 ## ✨ Features
 
