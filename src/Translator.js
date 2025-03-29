@@ -36,25 +36,25 @@ export default function Translator() {
 
   const handleTranslate = async () => {
     if (!inputText || !inputFormat || !outputFormat) return;
-
+  
     setIsLoading(true);
-
-    const url = `https://microsoft-translator-text-api3.p.rapidapi.com/translate?to=${outputFormat}&from=${inputFormat}&textType=plain`;
-
+  
+    const url = `${process.env.REACT_APP_TRANSLATOR_API_URL}?to=${outputFormat}&from=${inputFormat}&textType=plain`;
+  
     const options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-rapidapi-host": "microsoft-translator-text-api3.p.rapidapi.com",
-        "x-rapidapi-key": "77394a4461mshce838104022c0f0p18b433jsn2f65b8658909",
+        "x-rapidapi-host": process.env.REACT_APP_RAPIDAPI_HOST,
+        "x-rapidapi-key": process.env.REACT_APP_RAPIDAPI_KEY,
       },
       body: JSON.stringify([{ text: inputText }]),
     };
-
+  
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-
+  
       if (result && result[0]?.translations?.length) {
         setTranslatedText(result[0].translations[0].text);
       } else {
@@ -64,9 +64,10 @@ export default function Translator() {
       console.error(error);
       alert("Please Try Again! An error occurred.");
     }
-
+  
     setIsLoading(false);
   };
+  
 
   // Speech-to-Text Functionality
   const handleSpeechToText = () => {
